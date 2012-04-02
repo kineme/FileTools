@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>name</key>
+		<string>Open Panel</string>
+		<key>categories</key>
+		<array>
+			<string>Kineme FileTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright 2010 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch pops up a file/directory "Open" panel.
+
+In the interests of user safety, the panel will only appear inside the Quartz Composer Editor and inside Kineme QuartzBuilder applications.
+		
+http://kineme.net/</string>
+		<key>aliasNames</key>
+		<array>
+			<string>File Open</string>
+			<string>File Dialog</string>
+			<string>File Window</string>
+			<string>File Popup</string>
+			<string>File Pop-up</string>
+			<string>Open Dialog</string>
+			<string>Open Window</string>
+			<string>Open Popup</string>
+			<string>Open Pop-up</string>
+		</array>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputStartSignal</key>
+		<dict>
+			<key>name</key>
+			<string>Start Signal</string>
+			<key>description</key>
+			<string>Causes the Open panel to appear and receive focus.</string>
+		</dict>
+		<key>inputInitialURL</key>
+		<dict>
+			<key>name</key>
+			<string>Initial URL</string>
+			<key>description</key>
+			<string>A local URL specifying the initial browsing folder.</string>
+		</dict>
+		<key>inputTitle</key>
+		<dict>
+			<key>name</key>
+			<string>Title</string>
+			<key>description</key>
+			<string>Window Title</string>
+		</dict>
+		<key>inputMessage</key>
+		<dict>
+			<key>name</key>
+			<string>Message</string>
+			<key>description</key>
+			<string>One-line message that appears below the window title.</string>
+		</dict>
+		<key>inputPrompt</key>
+		<dict>
+			<key>name</key>
+			<string>Prompt</string>
+			<key>description</key>
+			<string>The caption of the default button.</string>
+		</dict>
+		<key>inputAllowedFileTypes</key>
+		<dict>
+			<key>name</key>
+			<string>Allowed File Types</string>
+			<key>description</key>
+			<string>A comma-separated list of either
+common file extensions (for example, "png")
+or UTIs (for example, "public.image").
+If empty, the user can select any file type.</string>
+		</dict>
+		<key>inputCanChooseFiles</key>
+		<dict>
+			<key>name</key>
+			<string>Can Choose Files</string>
+			<key>description</key>
+			<string>Can the user choose files in the Open panel?</string>
+		</dict>
+		<key>inputCanChooseDirectories</key>
+		<dict>
+			<key>name</key>
+			<string>Can Choose Folders</string>
+			<key>description</key>
+			<string>Can the user choose folders in the Open panel?</string>
+		</dict>
+		<key>inputAllowsMultipleSelection</key>
+		<dict>
+			<key>name</key>
+			<string>Allow Multiple</string>
+			<key>description</key>
+			<string>Can the user choose multiple items in the Open panel?</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputOKSignal</key>
+		<dict>
+			<key>name</key>
+			<string>OK Signal</string>
+			<key>description</key>
+			<string>Outputs true when the user successfully completes the Open panel.</string>
+		</dict>
+		<key>outputCancelSignal</key>
+		<dict>
+			<key>name</key>
+			<string>Cancel Signal</string>
+			<key>description</key>
+			<string>Outputs true when the user cancels the Open panel.</string>
+		</dict>
+		<key>outputSelectedURLs</key>
+		<dict>
+			<key>name</key>
+			<string>Selected URLs</string>
+			<key>description</key>
+			<string>A structure containing the URLs the user has selected.</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

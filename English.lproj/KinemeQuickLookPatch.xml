@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme FileTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright 2008 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch uses QuickLook to generate a preview of a file.
+
+--
+http://kineme.net/</string>
+		<key>name</key>
+		<string>QuickLook</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputPath</key>
+		<dict>
+			<key>description</key>
+			<string>File Path the generate a preview of</string>
+			<key>name</key>
+			<string>Path</string>
+		</dict>
+		<key>inputWidth</key>
+		<dict>
+			<key>description</key>
+			<string>Width of generated preview</string>
+			<key>name</key>
+			<string>Pixels Wide</string>
+		</dict>
+		<key>inputHeight</key>
+		<dict>
+			<key>description</key>
+			<string>Height of generated preview</string>
+			<key>name</key>
+			<string>Pixels High</string>
+		</dict>
+		<key>inputIconMode</key>
+		<dict>
+			<key>description</key>
+			<string>Generate preview with icon decorations</string>
+			<key>name</key>
+			<string>Icon Mode</string>
+		</dict>
+		<key>inputAsynchronous</key>
+		<dict>
+			<key>description</key>
+			<string>Generate preview on a background thread</string>
+			<key>name</key>
+			<string>Asynchronous</string>
+		</dict>
+		<key>inputSkipQuickLook</key>
+		<dict>
+			<key>description</key>
+			<string>Generate preview with Finder icon, skipping QuickLook preview</string>
+			<key>name</key>
+			<string>Skip QuickLook</string>
+		</dict>
+
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputImage</key>
+		<dict>
+			<key>description</key>
+			<string>Generated QuickLook Image</string>
+			<key>name</key>
+			<string>Image</string>
+		</dict>
+		<key>outputDone</key>
+		<dict>
+			<key>description</key>
+			<string>True when image has finished</string>
+			<key>name</key>
+			<string>Done</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme FileTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2006 Kosada Incorporated</string>
+		<key>description</key>
+		<string>This patch returns some information about the zeroth Cocoa NSDocument.
+
+--
+
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Document Info</string>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputCurrentDirectory</key>
+		<dict>
+			<key>description</key>
+			<string>Current Directory</string>
+			<key>name</key>
+			<string>Current Directory</string>
+		</dict>
+		<key>outputDocumentDisplayName</key>
+		<dict>
+			<key>description</key>
+			<string>Document Display Name</string>
+			<key>name</key>
+			<string>Document Display Name</string>
+		</dict>
+		<key>outputDocumentFileName</key>
+		<dict>
+			<key>description</key>
+			<string>Document File Name</string>
+			<key>name</key>
+			<string>Document File Name</string>
+		</dict>
+		<key>outputDocumentFileURL</key>
+		<dict>
+			<key>description</key>
+			<string>Document File URL</string>
+			<key>name</key>
+			<string>Document File URL</string>
+		</dict>
+		<key>outputDocumentIsEdited</key>
+		<dict>
+			<key>description</key>
+			<string>Document Is Edited</string>
+			<key>name</key>
+			<string>Document Is Edited</string>
+		</dict>
+		<key>outputDocumentModificationDate</key>
+		<dict>
+			<key>description</key>
+			<string>Document Modification Date</string>
+			<key>name</key>
+			<string>Document Modification Date</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

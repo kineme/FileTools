@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme FileTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright 2007 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch downloads an image from a URL.
+
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Image Downloader (Blocking)</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputURL</key>
+		<dict>
+			<key>description</key>
+			<string>Image URL</string>
+			<key>name</key>
+			<string>Image URL</string>
+		</dict>
+		<key>inputAsynchronous</key>
+		<dict>
+			<key>description</key>
+			<string>Load image asynchronously (don't block)</string>
+			<key>name</key>
+			<string>Asynchronous</string>
+		</dict>
+		
+		<key>inputUseProxyCache</key>
+		<dict>
+			<key>description</key>
+			<string>Cache and use smaller cached proxy images</string>
+			<key>name</key>
+			<string>Use Proxy Cache</string>
+		</dict>
+		<key>inputProxyThresholdWidth</key>
+		<dict>
+			<key>description</key>
+			<string>Width where images are rescaled for the proxy cache</string>
+			<key>name</key>
+			<string>Proxy Threshold Width</string>
+		</dict>
+		<key>inputInterpolation</key>
+		<dict>
+			<key>description</key>
+			<string>Interpolation method used when downsampling</string>
+			<key>name</key>
+			<string>Interpolation</string>
+			<key>menu</key>
+			<array>
+				<string>Bilinear</string>
+				<string>Lanczos</string>
+			</array>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputImage</key>
+		<dict>
+			<key>description</key>
+			<string>Image</string>
+			<key>name</key>
+			<string>Image</string>
+		</dict>
+		<key>outputEXIFData</key>
+		<dict>
+			<key>description</key>
+			<string>Output structure containing image metadata, if available</string>
+			<key>name</key>
+			<string>MetaData</string>
+		</dict>
+		<key>outputFinished</key>
+		<dict>
+			<key>description</key>
+			<string>True if loading has finished</string>
+			<key>name</key>
+			<string>Finished</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

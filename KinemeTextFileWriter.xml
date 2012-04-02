@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme FileTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2007-2010 Kosada Incorporated</string>
+		<key>description</key>
+		<string>This patch saves an input string to a text file.
+
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Text File Writer</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputText</key>
+		<dict>
+			<key>description</key>
+			<string>Text to write to file</string>
+			<key>name</key>
+			<string>Text</string>
+		</dict>
+		<key>inputFile</key>
+		<dict>
+			<key>description</key>
+			<string>The file to save to.  File paths starting with '/' are absolute, with '~' are user-local, and otherwise composition-relative.</string>
+			<key>name</key>
+			<string>Output File</string>
+		</dict>
+		<key>inputSignal</key>
+		<dict>
+			<key>description</key>
+			<string>Signals when to write Text to Output File</string>
+			<key>name</key>
+			<string>Write Signal</string>
+		</dict>
+		<key>inputMode</key>
+		<dict>
+			<key>description</key>
+			<string>Selects which files to return</string>
+			<key>name</key>
+			<string>Mode</string>
+			<key>menu</key>
+			<array>
+				<string>Overwrite</string>
+				<string>Append</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

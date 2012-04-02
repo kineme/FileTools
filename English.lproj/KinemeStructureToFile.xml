@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme FileTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright 2007 Kosada Incorporated</string>
+		<key>description</key>
+		<string>This patch saves an input structure to a binary plist file.
+
+--
+
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Structure To File</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputStructure</key>
+		<dict>
+			<key>description</key>
+			<string>Structure to write to file</string>
+			<key>name</key>
+			<string>Structure</string>
+		</dict>
+		<key>inputFile</key>
+		<dict>
+			<key>description</key>
+			<string>The file to save to.  File paths starting with '/' are absolute, with '~' are user-local, and otherwise composition-relative.</string>
+			<key>name</key>
+			<string>Output File</string>
+		</dict>
+		<key>inputWriteSignal</key>
+		<dict>
+			<key>description</key>
+			<string>Signals when to write Structure to Output File</string>
+			<key>name</key>
+			<string>Write Signal</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

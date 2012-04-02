@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputPath</key>
+		<dict>
+			<key>description</key>
+			<string>The Path to inspect</string>
+			<key>name</key>
+			<string>Path</string>
+		</dict>
+	</dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme FileTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2006 Kosada Incorporated</string>
+		<key>description</key>
+		<string>This patch provides the Uniform Type Identifier (UTI) of the specified file.  For example, if the path to a QuickTime movie is specified, File Type outputs "com.apple.quicktime-movie".
+
+Type can be one of the following:
+   * NSFileTypeDirectory -- Directory/Folder
+   * NSFileTypeRegular -- Regular File
+   * NSFileTypeSymbolicLink -- Symbolic Link
+   * NSFileTypeSocket -- Socket
+   * NSFileTypeCharacterSpecial -- Character Device
+   * NSFileTypeBlockSpecial -- Block Device
+   * NSFileTypeUnknown -- Unknown
+   
+--
+
+http://kineme.net/</string>
+		<key>name</key>
+		<string>File Info</string>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputExists</key>
+		<dict>
+			<key>description</key>
+			<string>True if a file or directory exists at the specified path</string>
+			<key>name</key>
+			<string>Exists</string>
+		</dict>
+		<key>outputType</key>
+		<dict>
+			<key>description</key>
+			<string>File Type as a string</string>
+			<key>name</key>
+			<string>Type</string>
+		</dict>
+		<key>outputSize</key>
+		<dict>
+			<key>description</key>
+			<string>File Size in Bytes</string>
+			<key>name</key>
+			<string>Size</string>
+		</dict>
+		<key>outputCreatedTime</key>
+		<dict>
+			<key>description</key>
+			<string>File Creation Time</string>
+			<key>name</key>
+			<string>Creation Time</string>
+		</dict>
+		<key>outputModifiedTime</key>
+		<dict>
+			<key>description</key>
+			<string>Last Modified Time</string>
+			<key>name</key>
+			<string>Modification Time</string>
+		</dict>
+
+
+	</dict>
+</dict>
+</plist>

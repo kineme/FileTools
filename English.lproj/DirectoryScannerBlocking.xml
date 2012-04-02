@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme FileTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright 2008-2010 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch is just like the Directory Scanner, except that it waits for the scanner to finish before continuing to render.
+
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Directory Scanner (Blocking)</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputPath</key>
+		<dict>
+			<key>description</key>
+			<string>The directory to scan</string>
+			<key>name</key>
+			<string>Directory Location</string>
+		</dict>
+		<key>inputScanSignal</key>
+		<dict>
+			<key>description</key>
+			<string>Signals when to scan</string>
+			<key>name</key>
+			<string>Scan Signal</string>
+		</dict>
+		<key>inputFollowLinks</key>
+		<dict>
+			<key>description</key>
+			<string>Indicates whether or not to follow Aliases and Symbolic Links when scanning</string>
+			<key>name</key>
+			<string>Follow Links</string>
+		</dict>
+		<key>inputMaxDepth</key>
+		<dict>
+			<key>description</key>
+			<string>Maximum depth to scan.  0 means non-recursive, 1 means 1 folder deep, etc</string>
+			<key>name</key>
+			<string>Max Depth</string>
+		</dict>
+		<key>inputIncludeInvisible</key>
+		<dict>
+			<key>description</key>
+			<string>If true, files that are normally hidden from users will be included in the output structure.</string>
+			<key>name</key>
+			<string>Include Invisible</string>
+		</dict>
+		<key>inputFileTypes</key>
+		<dict>
+			<key>description</key>
+			<string>Selects which files to return</string>
+			<key>name</key>
+			<string>File Types</string>
+			<key>menu</key>
+			<array>
+				<string>Images Only</string>
+				<string>Movies Only</string>
+				<string>Images and Movies</string>
+				<string>Audio</string>
+				<string>Folders</string>
+				<string>All Files</string>
+				<string>Compositions</string>
+				<string>Compositions, Movies, and Images</string>
+			</array>
+		</dict>
+		<key>inputFileTypeCustom</key>
+		<dict>
+			<key>description</key>
+			<string>Include only files matching the specified UTI.  This port's value overrides the above "File Types" value.</string>
+			<key>name</key>
+			<string>Custom File Type</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputFileList</key>
+		<dict>
+			<key>description</key>
+			<string>Structure of Files found</string>
+			<key>name</key>
+			<string>File List</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

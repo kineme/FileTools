@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputFilePath</key>
+		<dict>
+			<key>description</key>
+			<string>The file to identify</string>
+			<key>name</key>
+			<string>File Path</string>
+		</dict>
+	</dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme FileTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2006 Kosada Incorporated</string>
+		<key>description</key>
+		<string>This patch provides the Uniform Type Identifier (UTI) of the specified file.  For example, if the path to a QuickTime movie is specified, File Type outputs "com.apple.quicktime-movie".
+
+--
+
+http://kineme.net/</string>
+		<key>name</key>
+		<string>File Type</string>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputUTI</key>
+		<dict>
+			<key>description</key>
+			<string>The Uniform Type Identifier (UTI) of the specified file, if valid</string>
+			<key>name</key>
+			<string>UTI String</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

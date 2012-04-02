@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputFilePath</key>
+		<dict>
+			<key>description</key>
+			<string>The file to read</string>
+			<key>name</key>
+			<string>File Path</string>
+		</dict>
+		<key>inputUpdate</key>
+		<dict>
+			<key>description</key>
+			<string>Reload the File</string>
+			<key>name</key>
+			<string>Update Signal</string>
+		</dict>
+
+	</dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme FileTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2006 Kosada Incorporated</string>
+		<key>description</key>
+		<string>This patch reads a file into a string.
+
+--
+
+http://kineme.net/</string>
+		<key>name</key>
+		<string>String With File</string>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputFileContent</key>
+		<dict>
+			<key>description</key>
+			<string>File content, if valid</string>
+			<key>name</key>
+			<string>File Content</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

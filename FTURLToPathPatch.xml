@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>name</key>
+		<string>URL To Path</string>
+		<key>categories</key>
+		<array>
+			<string>Kineme FileTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright 2010 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch converts a file:// URL into a Unix pathname.
+		
+http://kineme.net/</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputURL</key>
+		<dict>
+			<key>name</key>
+			<string>URL</string>
+			<key>description</key>
+			<string>URL</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputPath</key>
+		<dict>
+			<key>name</key>
+			<string>Path</string>
+			<key>description</key>
+			<string>Path</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

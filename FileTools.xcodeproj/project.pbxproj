@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A2338D10FD1BB0200507F7F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		2A2F77650D09F14C00FA6BCC /* KinemeDocumentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F775E0D09F14C00FA6BCC /* KinemeDocumentInfo.m */; };
+		2A2F77660D09F14C00FA6BCC /* KinemeFileType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F77600D09F14C00FA6BCC /* KinemeFileType.m */; };
+		2A2F77670D09F14C00FA6BCC /* KinemeStringWithFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F77620D09F14C00FA6BCC /* KinemeStringWithFile.m */; };
+		2A2F77680D09F14C00FA6BCC /* KinemeStringWithURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F77640D09F14C00FA6BCC /* KinemeStringWithURL.m */; };
+		2A2F77710D09F18B00FA6BCC /* KinemeDocumentInfo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F77690D09F18B00FA6BCC /* KinemeDocumentInfo.xml */; };
+		2A2F77720D09F18B00FA6BCC /* KinemeFileType.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F776B0D09F18B00FA6BCC /* KinemeFileType.xml */; };
+		2A2F77730D09F18B00FA6BCC /* KinemeStringWithFile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F776D0D09F18B00FA6BCC /* KinemeStringWithFile.xml */; };
+		2A2F77740D09F18B00FA6BCC /* KinemeStringWithURL.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2A2F776F0D09F18B00FA6BCC /* KinemeStringWithURL.xml */; };
+		2A6785410D6CE81F008C7493 /* KinemeFileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6785400D6CE81F008C7493 /* KinemeFileInfo.m */; };
+		2A6785690D6CEFA3008C7493 /* KinemeFileInfo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2A6785670D6CEFA3008C7493 /* KinemeFileInfo.xml */; };
+		2A6B33900F0AA79100E59CC3 /* KinemeOrange.rsrc in Resources */ = {isa = PBXBuildFile; fileRef = 2A6B338F0F0AA79100E59CC3 /* KinemeOrange.rsrc */; };
+		2A8904830E9BD04A0089D952 /* KinemeQuickLookPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8904820E9BD04A0089D952 /* KinemeQuickLookPatch.m */; };
+		2A8904860E9BD0670089D952 /* KinemeQuickLookPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2A8904840E9BD0670089D952 /* KinemeQuickLookPatch.xml */; };
+		2A89049D0E9BD1350089D952 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A89049C0E9BD1350089D952 /* QuickLook.framework */; };
+		2AA9E84B10C7115C000530D5 /* DirectoryScannerBlocking.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2AA9E84910C7115C000530D5 /* DirectoryScannerBlocking.xml */; };
+		2AA9E85110C7116F000530D5 /* DirectoryScannerBlocking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9E84E10C7116F000530D5 /* DirectoryScannerBlocking.m */; };
+		2AA9E8AA10C765E9000530D5 /* ImageDownloaderBlockingPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2AA9E8A810C765E9000530D5 /* ImageDownloaderBlockingPatch.xml */; };
+		2AA9E94610C76611000530D5 /* ImageDownloaderBlockingPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9E94210C76611000530D5 /* ImageDownloaderBlockingPatch.m */; };
+		2AA9E96A10C76790000530D5 /* libcrypto.0.9.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA9E96910C76790000530D5 /* libcrypto.0.9.7.dylib */; };
+		2AA9E96D10C767EF000530D5 /* bad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA9E96C10C767EF000530D5 /* bad.png */; };
+		2AF1D38A0D0DE0FB00C2695E /* KinemeTextFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1D3890D0DE0FB00C2695E /* KinemeTextFileWriter.m */; };
+		2AF1D3CF0D0E4C0900C2695E /* KinemeStructureToFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1D3CE0D0E4C0900C2695E /* KinemeStructureToFile.m */; };
+		2AF1D3D40D0E503000C2695E /* KinemeStructureToFile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2AF1D3D20D0E503000C2695E /* KinemeStructureToFile.xml */; };
+		2AF1D4260D0E5E2700C2695E /* KinemeStructureFromFile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2AF1D4240D0E5E2700C2695E /* KinemeStructureFromFile.xml */; };
+		2AF1D42A0D0E5E5700C2695E /* KinemeStructureFromFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1D4290D0E5E5700C2695E /* KinemeStructureFromFile.m */; };
+		2B40B312128B6F3D00C72794 /* FTOpenPanelPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B40B311128B6F3D00C72794 /* FTOpenPanelPatch.m */; };
+		2B6A77D012A219280069D93E /* FTSavePanelPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A77CF12A219280069D93E /* FTSavePanelPatch.m */; };
+		2B6A77D212A2194B0069D93E /* FTSavePanelPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A77D112A2194B0069D93E /* FTSavePanelPatch.xml */; };
+		2B8D9A6F128CBB4C008EA160 /* FTOpenPanelPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2B8D9A6E128CBB4C008EA160 /* FTOpenPanelPatch.xml */; };
+		2B8D9BBC128D02F5008EA160 /* FTURLToPathPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D9BBB128D02F5008EA160 /* FTURLToPathPatch.m */; };
+		2B8D9BC4128D03B5008EA160 /* FTURLToPathPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2B8D9BC3128D03B5008EA160 /* FTURLToPathPatch.xml */; };
+		2B8D9BF7128D07CD008EA160 /* FTPathToURLPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D9BF5128D07CD008EA160 /* FTPathToURLPatch.m */; };
+		2B8D9BF8128D07CD008EA160 /* FTPathToURLPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2B8D9BF6128D07CD008EA160 /* FTPathToURLPatch.xml */; };
+		2B96E58C116FC0F10038A519 /* KinemeTextFileWriter.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2AF1D3850D0DE08600C2695E /* KinemeTextFileWriter.xml */; };
+		2BBCE121128A598D00B3A9C1 /* GHUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBCDFFC128A121A00B3A9C1 /* GHUnit.framework */; };
+		2BBCE122128A599100B3A9C1 /* SkankySDK-TestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBCDFF8128A10F100B3A9C1 /* SkankySDK-TestCase.m */; settings = {COMPILER_FLAGS = "-std=c99"; }; };
+		2BBCE123128A599300B3A9C1 /* TestFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB033D4112A6ACE00701442 /* TestFileTools.m */; settings = {COMPILER_FLAGS = "-std=c99"; }; };
+		2BBCE124128A59A100B3A9C1 /* ImageDownloaderBlockingPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9E94210C76611000530D5 /* ImageDownloaderBlockingPatch.m */; };
+		2BBCE125128A59A500B3A9C1 /* DirectoryScannerBlocking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9E84E10C7116F000530D5 /* DirectoryScannerBlocking.m */; };
+		2BBCE14B128A5AE500B3A9C1 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1111F80089D19ED00C2708E /* Quartz.framework */; };
+		2BBCE14E128A5AED00B3A9C1 /* KinemeFileType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F77600D09F14C00FA6BCC /* KinemeFileType.m */; };
+		2BBCE151128A5AF200B3A9C1 /* libcrypto.0.9.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA9E96910C76790000530D5 /* libcrypto.0.9.7.dylib */; };
+		2BBCE18B128A628E00B3A9C1 /* bad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA9E96C10C767EF000530D5 /* bad.png */; };
+		F1111F81089D19ED00C2708E /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1111F80089D19ED00C2708E /* Quartz.framework */; };
+		F1481793089E5FE3006FD276 /* FileToolsPrincipal.m in Sources */ = {isa = PBXBuildFile; fileRef = F1481792089E5FE3006FD276 /* FileToolsPrincipal.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2A2F775D0D09F14C00FA6BCC /* KinemeDocumentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinemeDocumentInfo.h; sourceTree = "<group>"; };
+		2A2F775E0D09F14C00FA6BCC /* KinemeDocumentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinemeDocumentInfo.m; sourceTree = "<group>"; };
+		2A2F775F0D09F14C00FA6BCC /* KinemeFileType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinemeFileType.h; sourceTree = "<group>"; };
+		2A2F77600D09F14C00FA6BCC /* KinemeFileType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinemeFileType.m; sourceTree = "<group>"; };
+		2A2F77610D09F14C00FA6BCC /* KinemeStringWithFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinemeStringWithFile.h; sourceTree = "<group>"; };
+		2A2F77620D09F14C00FA6BCC /* KinemeStringWithFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinemeStringWithFile.m; sourceTree = "<group>"; };
+		2A2F77630D09F14C00FA6BCC /* KinemeStringWithURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinemeStringWithURL.h; sourceTree = "<group>"; };
+		2A2F77640D09F14C00FA6BCC /* KinemeStringWithURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinemeStringWithURL.m; sourceTree = "<group>"; };
+		2A2F776A0D09F18B00FA6BCC /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = English; path = English.lproj/KinemeDocumentInfo.xml; sourceTree = "<group>"; };
+		2A2F776C0D09F18B00FA6BCC /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = English; path = English.lproj/KinemeFileType.xml; sourceTree = "<group>"; };
+		2A2F776E0D09F18B00FA6BCC /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = English; path = English.lproj/KinemeStringWithFile.xml; sourceTree = "<group>"; };
+		2A2F77700D09F18B00FA6BCC /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = English; path = English.lproj/KinemeStringWithURL.xml; sourceTree = "<group>"; };
+		2A67853F0D6CE81F008C7493 /* KinemeFileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinemeFileInfo.h; sourceTree = "<group>"; };
+		2A6785400D6CE81F008C7493 /* KinemeFileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinemeFileInfo.m; sourceTree = "<group>"; };
+		2A6785680D6CEFA3008C7493 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = English; path = English.lproj/KinemeFileInfo.xml; sourceTree = "<group>"; };
+		2A6B338F0F0AA79100E59CC3 /* KinemeOrange.rsrc */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; path = KinemeOrange.rsrc; sourceTree = "<group>"; };
+		2A8904810E9BD04A0089D952 /* KinemeQuickLookPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinemeQuickLookPatch.h; sourceTree = "<group>"; };
+		2A8904820E9BD04A0089D952 /* KinemeQuickLookPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinemeQuickLookPatch.m; sourceTree = "<group>"; };
+		2A8904850E9BD0670089D952 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = English; path = English.lproj/KinemeQuickLookPatch.xml; sourceTree = "<group>"; };
+		2A89049C0E9BD1350089D952 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = /System/Library/Frameworks/QuickLook.framework; sourceTree = "<absolute>"; };
+		2AA9E84A10C7115C000530D5 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = English; path = English.lproj/DirectoryScannerBlocking.xml; sourceTree = "<group>"; };
+		2AA9E84D10C7116F000530D5 /* DirectoryScannerBlocking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryScannerBlocking.h; sourceTree = "<group>"; };
+		2AA9E84E10C7116F000530D5 /* DirectoryScannerBlocking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryScannerBlocking.m; sourceTree = "<group>"; };
+		2AA9E8A910C765E9000530D5 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = English; path = English.lproj/ImageDownloaderBlockingPatch.xml; sourceTree = "<group>"; };
+		2AA9E94110C76611000530D5 /* ImageDownloaderBlockingPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloaderBlockingPatch.h; sourceTree = "<group>"; };
+		2AA9E94210C76611000530D5 /* ImageDownloaderBlockingPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloaderBlockingPatch.m; sourceTree = "<group>"; };
+		2AA9E96910C76790000530D5 /* libcrypto.0.9.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.0.9.7.dylib; path = /usr/lib/libcrypto.0.9.7.dylib; sourceTree = "<absolute>"; };
+		2AA9E96C10C767EF000530D5 /* bad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bad.png; sourceTree = "<group>"; };
+		2AF1D3850D0DE08600C2695E /* KinemeTextFileWriter.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KinemeTextFileWriter.xml; sourceTree = "<group>"; };
+		2AF1D3880D0DE0FB00C2695E /* KinemeTextFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinemeTextFileWriter.h; sourceTree = "<group>"; };
+		2AF1D3890D0DE0FB00C2695E /* KinemeTextFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinemeTextFileWriter.m; sourceTree = "<group>"; };
+		2AF1D3CD0D0E4C0800C2695E /* KinemeStructureToFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinemeStructureToFile.h; sourceTree = "<group>"; };
+		2AF1D3CE0D0E4C0900C2695E /* KinemeStructureToFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinemeStructureToFile.m; sourceTree = "<group>"; };
+		2AF1D3D30D0E503000C2695E /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = English; path = English.lproj/KinemeStructureToFile.xml; sourceTree = "<group>"; };
+		2AF1D4250D0E5E2700C2695E /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = English; path = English.lproj/KinemeStructureFromFile.xml; sourceTree = "<group>"; };
+		2AF1D4280D0E5E5700C2695E /* KinemeStructureFromFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinemeStructureFromFile.h; sourceTree = "<group>"; };
+		2AF1D4290D0E5E5700C2695E /* KinemeStructureFromFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinemeStructureFromFile.m; sourceTree = "<group>"; };
+		2B40B310128B6F3D00C72794 /* FTOpenPanelPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTOpenPanelPatch.h; sourceTree = "<group>"; };
+		2B40B311128B6F3D00C72794 /* FTOpenPanelPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTOpenPanelPatch.m; sourceTree = "<group>"; };
+		2B6A77CE12A219280069D93E /* FTSavePanelPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTSavePanelPatch.h; sourceTree = "<group>"; };
+		2B6A77CF12A219280069D93E /* FTSavePanelPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTSavePanelPatch.m; sourceTree = "<group>"; };
+		2B6A77D112A2194B0069D93E /* FTSavePanelPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FTSavePanelPatch.xml; sourceTree = "<group>"; };
+		2B8D9A6E128CBB4C008EA160 /* FTOpenPanelPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FTOpenPanelPatch.xml; sourceTree = "<group>"; };
+		2B8D9BBA128D02F5008EA160 /* FTURLToPathPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTURLToPathPatch.h; sourceTree = "<group>"; };
+		2B8D9BBB128D02F5008EA160 /* FTURLToPathPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTURLToPathPatch.m; sourceTree = "<group>"; };
+		2B8D9BC3128D03B5008EA160 /* FTURLToPathPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FTURLToPathPatch.xml; sourceTree = "<group>"; };
+		2B8D9BF4128D07CD008EA160 /* FTPathToURLPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPathToURLPatch.h; sourceTree = "<group>"; };
+		2B8D9BF5128D07CD008EA160 /* FTPathToURLPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPathToURLPatch.m; sourceTree = "<group>"; };
+		2B8D9BF6128D07CD008EA160 /* FTPathToURLPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FTPathToURLPatch.xml; sourceTree = "<group>"; };
+		2BB033D4112A6ACE00701442 /* TestFileTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFileTools.m; sourceTree = "<group>"; };
+		2BBCDFF8128A10F100B3A9C1 /* SkankySDK-TestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SkankySDK-TestCase.m"; path = "../../include/SkankySDK-TestCase.m"; sourceTree = SOURCE_ROOT; };
+		2BBCDFFC128A121A00B3A9C1 /* GHUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnit.framework; path = Library/Frameworks/GHUnit.framework; sourceTree = SDKROOT; };
+		2BBCE11B128A597D00B3A9C1 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BBCE11D128A597D00B3A9C1 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		32DBCF630370AF2F00C91783 /* FileTools_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileTools_Prefix.pch; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* FileTools.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileTools.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1111F80089D19ED00C2708E /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		F1481791089E5FE3006FD276 /* FileToolsPrincipal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileToolsPrincipal.h; sourceTree = "<group>"; };
+		F1481792089E5FE3006FD276 /* FileToolsPrincipal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileToolsPrincipal.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BBCE119128A597D00B3A9C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BBCE121128A598D00B3A9C1 /* GHUnit.framework in Frameworks */,
+				2BBCE14B128A5AE500B3A9C1 /* Quartz.framework in Frameworks */,
+				2BBCE151128A5AF200B3A9C1 /* libcrypto.0.9.7.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1111F81089D19ED00C2708E /* Quartz.framework in Frameworks */,
+				2A89049D0E9BD1350089D952 /* QuickLook.framework in Frameworks */,
+				2A2338D10FD1BB0200507F7F /* Cocoa.framework in Frameworks */,
+				2AA9E96A10C76790000530D5 /* libcrypto.0.9.7.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* FileTools */ = {
+			isa = PBXGroup;
+			children = (
+				2BB033D7112A6AD500701442 /* UnitTests */,
+				2AB830650CDDF334005AB050 /* Patches */,
+				F1481791089E5FE3006FD276 /* FileToolsPrincipal.h */,
+				F1481792089E5FE3006FD276 /* FileToolsPrincipal.m */,
+				32DBCF630370AF2F00C91783 /* FileTools_Prefix.pch */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = FileTools;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2AA9E96910C76790000530D5 /* libcrypto.0.9.7.dylib */,
+				2A89049C0E9BD1350089D952 /* QuickLook.framework */,
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+				2BBCDFFC128A121A00B3A9C1 /* GHUnit.framework */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2AA9E96C10C767EF000530D5 /* bad.png */,
+				2A6B338F0F0AA79100E59CC3 /* KinemeOrange.rsrc */,
+				2AA9E8A810C765E9000530D5 /* ImageDownloaderBlockingPatch.xml */,
+				2AA9E84910C7115C000530D5 /* DirectoryScannerBlocking.xml */,
+				2A8904840E9BD0670089D952 /* KinemeQuickLookPatch.xml */,
+				2AF1D4240D0E5E2700C2695E /* KinemeStructureFromFile.xml */,
+				2AF1D3D20D0E503000C2695E /* KinemeStructureToFile.xml */,
+				2AF1D3850D0DE08600C2695E /* KinemeTextFileWriter.xml */,
+				2A2F77690D09F18B00FA6BCC /* KinemeDocumentInfo.xml */,
+				2A2F776B0D09F18B00FA6BCC /* KinemeFileType.xml */,
+				2A2F776D0D09F18B00FA6BCC /* KinemeStringWithFile.xml */,
+				2A2F776F0D09F18B00FA6BCC /* KinemeStringWithURL.xml */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				2A6785670D6CEFA3008C7493 /* KinemeFileInfo.xml */,
+				2B8D9A6E128CBB4C008EA160 /* FTOpenPanelPatch.xml */,
+				2B6A77D112A2194B0069D93E /* FTSavePanelPatch.xml */,
+				2B8D9BC3128D03B5008EA160 /* FTURLToPathPatch.xml */,
+				2B8D9BF6128D07CD008EA160 /* FTPathToURLPatch.xml */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1111F80089D19ED00C2708E /* Quartz.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* FileTools.plugin */,
+				2BBCE11B128A597D00B3A9C1 /* Tests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AA9E8AB10C765F5000530D5 /* Image downloader Blocking */ = {
+			isa = PBXGroup;
+			children = (
+				2AA9E94110C76611000530D5 /* ImageDownloaderBlockingPatch.h */,
+				2AA9E94210C76611000530D5 /* ImageDownloaderBlockingPatch.m */,
+			);
+			name = "Image downloader Blocking";
+			sourceTree = "<group>";
+		};
+		2AB830650CDDF334005AB050 /* Patches */ = {
+			isa = PBXGroup;
+			children = (
+				2AA9E8AB10C765F5000530D5 /* Image downloader Blocking */,
+				2AA9E84D10C7116F000530D5 /* DirectoryScannerBlocking.h */,
+				2AA9E84E10C7116F000530D5 /* DirectoryScannerBlocking.m */,
+				2A8904810E9BD04A0089D952 /* KinemeQuickLookPatch.h */,
+				2A8904820E9BD04A0089D952 /* KinemeQuickLookPatch.m */,
+				2A2F775D0D09F14C00FA6BCC /* KinemeDocumentInfo.h */,
+				2A2F775E0D09F14C00FA6BCC /* KinemeDocumentInfo.m */,
+				2A2F775F0D09F14C00FA6BCC /* KinemeFileType.h */,
+				2A2F77600D09F14C00FA6BCC /* KinemeFileType.m */,
+				2A2F77610D09F14C00FA6BCC /* KinemeStringWithFile.h */,
+				2A2F77620D09F14C00FA6BCC /* KinemeStringWithFile.m */,
+				2A2F77630D09F14C00FA6BCC /* KinemeStringWithURL.h */,
+				2A2F77640D09F14C00FA6BCC /* KinemeStringWithURL.m */,
+				2AF1D3880D0DE0FB00C2695E /* KinemeTextFileWriter.h */,
+				2AF1D3890D0DE0FB00C2695E /* KinemeTextFileWriter.m */,
+				2AF1D3CD0D0E4C0800C2695E /* KinemeStructureToFile.h */,
+				2AF1D3CE0D0E4C0900C2695E /* KinemeStructureToFile.m */,
+				2AF1D4280D0E5E5700C2695E /* KinemeStructureFromFile.h */,
+				2AF1D4290D0E5E5700C2695E /* KinemeStructureFromFile.m */,
+				2A67853F0D6CE81F008C7493 /* KinemeFileInfo.h */,
+				2A6785400D6CE81F008C7493 /* KinemeFileInfo.m */,
+				2B40B310128B6F3D00C72794 /* FTOpenPanelPatch.h */,
+				2B40B311128B6F3D00C72794 /* FTOpenPanelPatch.m */,
+				2B6A77CE12A219280069D93E /* FTSavePanelPatch.h */,
+				2B6A77CF12A219280069D93E /* FTSavePanelPatch.m */,
+				2B8D9BBA128D02F5008EA160 /* FTURLToPathPatch.h */,
+				2B8D9BBB128D02F5008EA160 /* FTURLToPathPatch.m */,
+				2B8D9BF4128D07CD008EA160 /* FTPathToURLPatch.h */,
+				2B8D9BF5128D07CD008EA160 /* FTPathToURLPatch.m */,
+			);
+			name = Patches;
+			sourceTree = "<group>";
+		};
+		2BB033D7112A6AD500701442 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BBCE11D128A597D00B3A9C1 /* Tests-Info.plist */,
+				2BBCDFF8128A10F100B3A9C1 /* SkankySDK-TestCase.m */,
+				2BB033D4112A6ACE00701442 /* TestFileTools.m */,
+			);
+			name = UnitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BBCE11A128A597D00B3A9C1 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BBCE11F128A597E00B3A9C1 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				2BBCE117128A597D00B3A9C1 /* Resources */,
+				2BBCE118128A597D00B3A9C1 /* Sources */,
+				2BBCE119128A597D00B3A9C1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 2BBCE11B128A597D00B3A9C1 /* Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D5B49AC048680CD000E48DA /* FileTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF69CC809F19DD300CAA391 /* Build configuration list for PBXNativeTarget "FileTools" */;
+			buildPhases = (
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+				8D5B49AF048680CD000E48DA /* Resources */,
+				2A6B33930F0AA7B000E59CC3 /* Postprocess */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileTools;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = FileTools;
+			productReference = 8D5B49B6048680CD000E48DA /* FileTools.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2BF69CCC09F19DD300CAA391 /* Build configuration list for PBXProject "FileTools" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* FileTools */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* FileTools */,
+				2BBCE11A128A597D00B3A9C1 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BBCE117128A597D00B3A9C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BBCE18B128A628E00B3A9C1 /* bad.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2F77710D09F18B00FA6BCC /* KinemeDocumentInfo.xml in Resources */,
+				2A2F77720D09F18B00FA6BCC /* KinemeFileType.xml in Resources */,
+				2A2F77730D09F18B00FA6BCC /* KinemeStringWithFile.xml in Resources */,
+				2A2F77740D09F18B00FA6BCC /* KinemeStringWithURL.xml in Resources */,
+				2B96E58C116FC0F10038A519 /* KinemeTextFileWriter.xml in Resources */,
+				2AF1D3D40D0E503000C2695E /* KinemeStructureToFile.xml in Resources */,
+				2AF1D4260D0E5E2700C2695E /* KinemeStructureFromFile.xml in Resources */,
+				2A6785690D6CEFA3008C7493 /* KinemeFileInfo.xml in Resources */,
+				2A8904860E9BD0670089D952 /* KinemeQuickLookPatch.xml in Resources */,
+				2A6B33900F0AA79100E59CC3 /* KinemeOrange.rsrc in Resources */,
+				2AA9E84B10C7115C000530D5 /* DirectoryScannerBlocking.xml in Resources */,
+				2AA9E8AA10C765E9000530D5 /* ImageDownloaderBlockingPatch.xml in Resources */,
+				2AA9E96D10C767EF000530D5 /* bad.png in Resources */,
+				2B8D9A6F128CBB4C008EA160 /* FTOpenPanelPatch.xml in Resources */,
+				2B8D9BC4128D03B5008EA160 /* FTURLToPathPatch.xml in Resources */,
+				2B8D9BF8128D07CD008EA160 /* FTPathToURLPatch.xml in Resources */,
+				2B6A77D212A2194B0069D93E /* FTSavePanelPatch.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A6B33930F0AA7B000E59CC3 /* Postprocess */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Postprocess;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/Library/Frameworks/SkankySDK.framework/Resources/plugin-postprocess.php \"$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BBCE118128A597D00B3A9C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BBCE122128A599100B3A9C1 /* SkankySDK-TestCase.m in Sources */,
+				2BBCE123128A599300B3A9C1 /* TestFileTools.m in Sources */,
+				2BBCE124128A59A100B3A9C1 /* ImageDownloaderBlockingPatch.m in Sources */,
+				2BBCE125128A59A500B3A9C1 /* DirectoryScannerBlocking.m in Sources */,
+				2BBCE14E128A5AED00B3A9C1 /* KinemeFileType.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1481793089E5FE3006FD276 /* FileToolsPrincipal.m in Sources */,
+				2A2F77650D09F14C00FA6BCC /* KinemeDocumentInfo.m in Sources */,
+				2A2F77660D09F14C00FA6BCC /* KinemeFileType.m in Sources */,
+				2A2F77670D09F14C00FA6BCC /* KinemeStringWithFile.m in Sources */,
+				2A2F77680D09F14C00FA6BCC /* KinemeStringWithURL.m in Sources */,
+				2AF1D38A0D0DE0FB00C2695E /* KinemeTextFileWriter.m in Sources */,
+				2AF1D3CF0D0E4C0900C2695E /* KinemeStructureToFile.m in Sources */,
+				2AF1D42A0D0E5E5700C2695E /* KinemeStructureFromFile.m in Sources */,
+				2A6785410D6CE81F008C7493 /* KinemeFileInfo.m in Sources */,
+				2A8904830E9BD04A0089D952 /* KinemeQuickLookPatch.m in Sources */,
+				2AA9E85110C7116F000530D5 /* DirectoryScannerBlocking.m in Sources */,
+				2AA9E94610C76611000530D5 /* ImageDownloaderBlockingPatch.m in Sources */,
+				2B40B312128B6F3D00C72794 /* FTOpenPanelPatch.m in Sources */,
+				2B8D9BBC128D02F5008EA160 /* FTURLToPathPatch.m in Sources */,
+				2B8D9BF7128D07CD008EA160 /* FTPathToURLPatch.m in Sources */,
+				2B6A77D012A219280069D93E /* FTSavePanelPatch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A2F77690D09F18B00FA6BCC /* KinemeDocumentInfo.xml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A2F776A0D09F18B00FA6BCC /* English */,
+			);
+			name = KinemeDocumentInfo.xml;
+			sourceTree = "<group>";
+		};
+		2A2F776B0D09F18B00FA6BCC /* KinemeFileType.xml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A2F776C0D09F18B00FA6BCC /* English */,
+			);
+			name = KinemeFileType.xml;
+			sourceTree = "<group>";
+		};
+		2A2F776D0D09F18B00FA6BCC /* KinemeStringWithFile.xml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A2F776E0D09F18B00FA6BCC /* English */,
+			);
+			name = KinemeStringWithFile.xml;
+			sourceTree = "<group>";
+		};
+		2A2F776F0D09F18B00FA6BCC /* KinemeStringWithURL.xml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A2F77700D09F18B00FA6BCC /* English */,
+			);
+			name = KinemeStringWithURL.xml;
+			sourceTree = "<group>";
+		};
+		2A6785670D6CEFA3008C7493 /* KinemeFileInfo.xml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A6785680D6CEFA3008C7493 /* English */,
+			);
+			name = KinemeFileInfo.xml;
+			sourceTree = "<group>";
+		};
+		2A8904840E9BD0670089D952 /* KinemeQuickLookPatch.xml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A8904850E9BD0670089D952 /* English */,
+			);
+			name = KinemeQuickLookPatch.xml;
+			sourceTree = "<group>";
+		};
+		2AA9E84910C7115C000530D5 /* DirectoryScannerBlocking.xml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AA9E84A10C7115C000530D5 /* English */,
+			);
+			name = DirectoryScannerBlocking.xml;
+			sourceTree = "<group>";
+		};
+		2AA9E8A810C765E9000530D5 /* ImageDownloaderBlockingPatch.xml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AA9E8A910C765E9000530D5 /* English */,
+			);
+			name = ImageDownloaderBlockingPatch.xml;
+			sourceTree = "<group>";
+		};
+		2AF1D3D20D0E503000C2695E /* KinemeStructureToFile.xml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AF1D3D30D0E503000C2695E /* English */,
+			);
+			name = KinemeStructureToFile.xml;
+			sourceTree = "<group>";
+		};
+		2AF1D4240D0E5E2700C2695E /* KinemeStructureFromFile.xml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AF1D4250D0E5E2700C2695E /* English */,
+			);
+			name = KinemeStructureFromFile.xml;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BBCE11E128A597E00B3A9C1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FileTools_Prefix.pch;
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+			};
+			name = Default;
+		};
+		2BF69CCA09F19DD300CAA391 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FileTools_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				PREBINDING = NO;
+				PRODUCT_NAME = FileTools;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Default;
+		};
+		2BF69CCE09F19DD300CAA391 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_OBJC_GC = YES;
+				GCC_FAST_MATH = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_STRICT_ALIASING = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = ../../../QCHeaders;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SYMROOT = $TMPDIR/$FULL_PRODUCT_NAME/build;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BBCE11F128A597E00B3A9C1 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BBCE11E128A597E00B3A9C1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2BF69CC809F19DD300CAA391 /* Build configuration list for PBXNativeTarget "FileTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF69CCA09F19DD300CAA391 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		2BF69CCC09F19DD300CAA391 /* Build configuration list for PBXProject "FileTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF69CCE09F19DD300CAA391 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
