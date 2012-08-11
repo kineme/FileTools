@@ -1,5 +1,6 @@
 #import "ImageDownloaderBlockingPatch.h"
 #import <OpenGL/CGLMacro.h>
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation ImageDownloaderBlockingPatch : QCPatch
 
@@ -62,7 +63,7 @@
 			// look for on-disk proxy
 			NSData *urlData = [[url absoluteString] dataUsingEncoding: NSUTF8StringEncoding];
 			unsigned char digest[20];	// 160 bits of sha digest
-			SHA1([urlData bytes], [urlData length], digest);
+			CC_SHA1([urlData bytes], [urlData length], digest);
 			NSString *proxyFile = [NSString stringWithFormat:
 				@"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x-%i-%i.png",
 				//@"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x-%i.jpg",
