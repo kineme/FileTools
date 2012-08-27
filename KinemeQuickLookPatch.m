@@ -34,7 +34,9 @@ typedef struct
 	if(self=[super initWithIdentifier:fp8])
 	{
 		[inputWidth setDoubleValue: 128.];
+		[inputWidth setMinDoubleValue: 1.];
 		[inputHeight setDoubleValue: 128.];
+		[inputHeight setMinDoubleValue: 1.];
 		[inputIconMode setBooleanValue: YES];
 		[[self userInfo] setObject:@"Kineme QuickLook" forKey:@"name"];
 	}
