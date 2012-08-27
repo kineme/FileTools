@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>category</key>
+		<string>Kineme PDF</string>
+		<key>categories</key>
+		<array>
+			<string>Kineme PDF</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright 2009 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch renders PDFs and Adobe Illustrator files at a specified resolution.
+
+--
+http://kineme.net/</string>
+		<key>name</key>
+		<string>PDF Renderer</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputPath</key>
+		<dict>
+			<key>description</key>
+			<string>File to render</string>
+			<key>name</key>
+			<string>Filename</string>
+		</dict>
+		<key>inputWidth</key>
+		<dict>
+			<key>description</key>
+			<string>Width to render, in pixels</string>
+			<key>name</key>
+			<string>Width</string>
+		</dict>
+		<key>inputHeight</key>
+		<dict>
+			<key>description</key>
+			<string>Height to render, in pixels</string>
+			<key>name</key>
+			<string>Height</string>
+		</dict>
+		<key>inputPreserveAspect</key>
+		<dict>
+			<key>description</key>
+			<string>Preserves the document's aspect ratio when resizing</string>
+			<key>name</key>
+			<string>Preserve Aspect</string>
+		</dict>
+		<key>inputPageNumber</key>
+		<dict>
+			<key>description</key>
+			<string>Page number to render</string>
+			<key>name</key>
+			<string>Page Number</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputPageCount</key>
+		<dict>
+			<key>description</key>
+			<string>Number of pages the current document contains</string>
+			<key>name</key>
+			<string>Page Count</string>
+		</dict>
+		<key>outputImage</key>
+		<dict>
+			<key>description</key>
+			<string>Rendered image</string>
+			<key>name</key>
+			<string>Image</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

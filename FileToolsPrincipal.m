@@ -14,6 +14,7 @@
 #import "KinemeStructureFromFile.h"
 #import "KinemeStructureToFile.h"
 #import "KinemeTextFileWriter.h"
+#import "PDFRendererPatch.h"
 
 @implementation FileToolsPlugin
 + (void)registerNodesWithManager:(QCNodeManager*)manager
@@ -34,5 +35,6 @@
 	KIRegisterPatch(KinemeStructureFromFile);
 	KIRegisterPatch(KinemeStructureToFile);
 	KIRegisterPatch(KinemeTextFileWriter);
+	KIRegisterPatch(PDFRendererPatch);
 }
 @end
