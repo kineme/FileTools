@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1661AA6215EC10A00068981D /* PDFRendererPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1661AA6115EC10A00068981D /* PDFRendererPatch.m */; };
+		1661AA6415EC10CC0068981D /* PDFRendererPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1661AA6315EC10CC0068981D /* PDFRendererPatch.xml */; };
 		2A2338D10FD1BB0200507F7F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		2A2F77650D09F14C00FA6BCC /* KinemeDocumentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F775E0D09F14C00FA6BCC /* KinemeDocumentInfo.m */; };
 		2A2F77660D09F14C00FA6BCC /* KinemeFileType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F77600D09F14C00FA6BCC /* KinemeFileType.m */; };
@@ -26,7 +28,6 @@
 		2AA9E85110C7116F000530D5 /* DirectoryScannerBlocking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9E84E10C7116F000530D5 /* DirectoryScannerBlocking.m */; };
 		2AA9E8AA10C765E9000530D5 /* ImageDownloaderBlockingPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2AA9E8A810C765E9000530D5 /* ImageDownloaderBlockingPatch.xml */; };
 		2AA9E94610C76611000530D5 /* ImageDownloaderBlockingPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9E94210C76611000530D5 /* ImageDownloaderBlockingPatch.m */; };
-		2AA9E96A10C76790000530D5 /* libcrypto.0.9.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA9E96910C76790000530D5 /* libcrypto.0.9.7.dylib */; };
 		2AA9E96D10C767EF000530D5 /* bad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA9E96C10C767EF000530D5 /* bad.png */; };
 		2AF1D38A0D0DE0FB00C2695E /* KinemeTextFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1D3890D0DE0FB00C2695E /* KinemeTextFileWriter.m */; };
 		2AF1D3CF0D0E4C0900C2695E /* KinemeStructureToFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1D3CE0D0E4C0900C2695E /* KinemeStructureToFile.m */; };
@@ -49,7 +50,6 @@
 		2BBCE125128A59A500B3A9C1 /* DirectoryScannerBlocking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA9E84E10C7116F000530D5 /* DirectoryScannerBlocking.m */; };
 		2BBCE14B128A5AE500B3A9C1 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1111F80089D19ED00C2708E /* Quartz.framework */; };
 		2BBCE14E128A5AED00B3A9C1 /* KinemeFileType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2F77600D09F14C00FA6BCC /* KinemeFileType.m */; };
-		2BBCE151128A5AF200B3A9C1 /* libcrypto.0.9.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA9E96910C76790000530D5 /* libcrypto.0.9.7.dylib */; };
 		2BBCE18B128A628E00B3A9C1 /* bad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA9E96C10C767EF000530D5 /* bad.png */; };
 		F1111F81089D19ED00C2708E /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1111F80089D19ED00C2708E /* Quartz.framework */; };
 		F1481793089E5FE3006FD276 /* FileToolsPrincipal.m in Sources */ = {isa = PBXBuildFile; fileRef = F1481792089E5FE3006FD276 /* FileToolsPrincipal.m */; };
@@ -57,6 +57,9 @@
 
 /* Begin PBXFileReference section */
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1661AA6015EC10A00068981D /* PDFRendererPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFRendererPatch.h; sourceTree = "<group>"; };
+		1661AA6115EC10A00068981D /* PDFRendererPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFRendererPatch.m; sourceTree = "<group>"; };
+		1661AA6315EC10CC0068981D /* PDFRendererPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PDFRendererPatch.xml; sourceTree = "<group>"; };
 		2A2F775D0D09F14C00FA6BCC /* KinemeDocumentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinemeDocumentInfo.h; sourceTree = "<group>"; };
 		2A2F775E0D09F14C00FA6BCC /* KinemeDocumentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinemeDocumentInfo.m; sourceTree = "<group>"; };
 		2A2F775F0D09F14C00FA6BCC /* KinemeFileType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinemeFileType.h; sourceTree = "<group>"; };
@@ -83,7 +86,6 @@
 		2AA9E8A910C765E9000530D5 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = English; path = English.lproj/ImageDownloaderBlockingPatch.xml; sourceTree = "<group>"; };
 		2AA9E94110C76611000530D5 /* ImageDownloaderBlockingPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloaderBlockingPatch.h; sourceTree = "<group>"; };
 		2AA9E94210C76611000530D5 /* ImageDownloaderBlockingPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloaderBlockingPatch.m; sourceTree = "<group>"; };
-		2AA9E96910C76790000530D5 /* libcrypto.0.9.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.0.9.7.dylib; path = /usr/lib/libcrypto.0.9.7.dylib; sourceTree = "<absolute>"; };
 		2AA9E96C10C767EF000530D5 /* bad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bad.png; sourceTree = "<group>"; };
 		2AF1D3850D0DE08600C2695E /* KinemeTextFileWriter.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KinemeTextFileWriter.xml; sourceTree = "<group>"; };
 		2AF1D3880D0DE0FB00C2695E /* KinemeTextFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinemeTextFileWriter.h; sourceTree = "<group>"; };
@@ -126,7 +128,6 @@
 			files = (
 				2BBCE121128A598D00B3A9C1 /* GHUnit.framework in Frameworks */,
 				2BBCE14B128A5AE500B3A9C1 /* Quartz.framework in Frameworks */,
-				2BBCE151128A5AF200B3A9C1 /* libcrypto.0.9.7.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +138,6 @@
 				F1111F81089D19ED00C2708E /* Quartz.framework in Frameworks */,
 				2A89049D0E9BD1350089D952 /* QuickLook.framework in Frameworks */,
 				2A2338D10FD1BB0200507F7F /* Cocoa.framework in Frameworks */,
-				2AA9E96A10C76790000530D5 /* libcrypto.0.9.7.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +162,6 @@
 		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				2AA9E96910C76790000530D5 /* libcrypto.0.9.7.dylib */,
 				2A89049C0E9BD1350089D952 /* QuickLook.framework */,
 				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
 				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
@@ -174,6 +173,7 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1661AA6315EC10CC0068981D /* PDFRendererPatch.xml */,
 				2AA9E96C10C767EF000530D5 /* bad.png */,
 				2A6B338F0F0AA79100E59CC3 /* KinemeOrange.rsrc */,
 				2AA9E8A810C765E9000530D5 /* ImageDownloaderBlockingPatch.xml */,
@@ -233,6 +233,8 @@
 		2AB830650CDDF334005AB050 /* Patches */ = {
 			isa = PBXGroup;
 			children = (
+				1661AA6015EC10A00068981D /* PDFRendererPatch.h */,
+				1661AA6115EC10A00068981D /* PDFRendererPatch.m */,
 				2AA9E8AB10C765F5000530D5 /* Image downloader Blocking */,
 				2AA9E84D10C7116F000530D5 /* DirectoryScannerBlocking.h */,
 				2AA9E84E10C7116F000530D5 /* DirectoryScannerBlocking.m */,
@@ -370,6 +372,7 @@
 				2B8D9BC4128D03B5008EA160 /* FTURLToPathPatch.xml in Resources */,
 				2B8D9BF8128D07CD008EA160 /* FTPathToURLPatch.xml in Resources */,
 				2B6A77D212A2194B0069D93E /* FTSavePanelPatch.xml in Resources */,
+				1661AA6415EC10CC0068981D /* PDFRendererPatch.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +428,7 @@
 				2B8D9BBC128D02F5008EA160 /* FTURLToPathPatch.m in Sources */,
 				2B8D9BF7128D07CD008EA160 /* FTPathToURLPatch.m in Sources */,
 				2B6A77D012A219280069D93E /* FTSavePanelPatch.m in Sources */,
+				1661AA6215EC10A00068981D /* PDFRendererPatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +560,7 @@
 				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = "/Library/Frameworks//**";
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_ENABLE_OBJC_GC = YES;
 				GCC_FAST_MATH = YES;
@@ -565,7 +570,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = ../../../QCHeaders;
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				SYMROOT = $TMPDIR/$FULL_PRODUCT_NAME/build;
 			};
 			name = Default;
