@@ -46,7 +46,10 @@
 	NSURL *u = [[NSURL alloc] initWithString:[inputURL stringValue]];
 	NSString *p = @"";
 	if([u isFileURL])
-		p = [u path];
+	{
+		p = (NSString *)CFURLCopyPath((CFURLRef)u);
+		p = [p stringByReplacingOccurrencesOfString:@"%20" withString:@" "];
+	}
 	[outputPath setStringValue:p];
 	[u release];
 
