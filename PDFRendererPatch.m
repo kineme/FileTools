@@ -64,11 +64,12 @@
 
 - (BOOL)execute:(QCOpenGLContext *)context time:(double)time arguments:(NSDictionary *)arguments
 {
-	if([inputPath stringValue] && [inputWidth indexValue] && [inputHeight indexValue])
+	if([[inputPath stringValue] length] > 0 && [inputWidth indexValue] && [inputHeight indexValue])
 	{
 		CFURLRef url;
-		url = CFURLCreateWithFileSystemPath (NULL, (CFStringRef)[inputPath stringValue], kCFURLPOSIXPathStyle, 0);
 		
+		url = CFURLCreateWithFileSystemPath (NULL, (CFStringRef)KIExpandPath(self, [inputPath stringValue]), kCFURLPOSIXPathStyle, 0);
+
 		if(!url)
 			return YES;
 		
