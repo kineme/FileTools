@@ -322,6 +322,8 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 2BF69CCC09F19DD300CAA391 /* Build configuration list for PBXProject "FileTools" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
@@ -556,8 +558,7 @@
 		2BF69CCE09F19DD300CAA391 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "/Library/Frameworks//**";
@@ -567,11 +568,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_STRICT_ALIASING = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = ../../../QCHeaders;
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
-				SYMROOT = $TMPDIR/$FULL_PRODUCT_NAME/build;
 			};
 			name = Default;
 		};
