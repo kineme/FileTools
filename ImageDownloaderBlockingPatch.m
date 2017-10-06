@@ -105,7 +105,8 @@
 							//NSLog(@"isr exists!");
 							CFDictionaryRef d = CGImageSourceCopyPropertiesAtIndex(isr, 0, nil);
 							[properties addEntriesFromDictionary:(NSDictionary *)d];
-							CFRelease(d);
+							if (d)
+								CFRelease(d);
 							CFRelease(isr);
 						}
 						else
@@ -195,7 +196,8 @@
 						//NSLog(@"isr2 exists!");
 						CFDictionaryRef d = CGImageSourceCopyPropertiesAtIndex(isr, 0, nil);
 						[properties addEntriesFromDictionary: (NSDictionary*)d];
-						CFRelease(d);
+						if (d)
+							CFRelease(d);
 					}
 					CFRelease(isr);
 				}
